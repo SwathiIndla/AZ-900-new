@@ -1,0 +1,17 @@
+Scaling out )) Horizontal scaling (opposite scaling in)
+
+- adding new resources to a system, such as servers, to increase performance and storage capacity.
+
+Scaling up )) Vertical scaling  (opposite scaling down)
+
+- scaling up involves increasing the capacity of existing resources.
+
+
+
+Business Agility  (page 12)
+
+tenent and azure active directory both are same
+
+Azure Active Directory (Azure AD): Think of this as a tool that helps organizations manage who can access their computer systems and applications. It's like a bouncer at a club, checking your ID before you can come in.
+
+Tenant: Imagine it as a separate box that contains all the information about the people and rules for one specific organization. Each organization gets its own box, and they can control who's allowed in and what they're allowed to do inside that box.

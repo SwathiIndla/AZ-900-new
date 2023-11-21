@@ -1,0 +1,125 @@
+Portal features
+--------------->
+
+personalize - create your own dashboards, layouts, workflows and colours
+
+Access control - only one login to access all resources
+
+Cost management - tools are there to track all resource costs
+
+One stop shop - only one login to access all resources
+
+Constantly updated - continuosly updated , that will help us to be on fast forwarding way
+
+Multi-platform - we can use this in any device (lap, mobile...)
+
+
+Azure CLI (Bash)
+----------->>
+
+The Azure Command-Line Interface (CLI) is a cross-platform tool for managing and administering Microsoft Azure. It allows you to use the terminal to query, create, and administer cloud resources. 
+
+Powershell
+------------->>
+
+Azure PowerShell is designed for managing and administering Azure resources from the command line.
+
+Cloud CLI
+---------->>
+
+Cloud Shell is 100% browser based and provides a complete environment where you can choose between Bash or PowerShell.
+
+Access :
+. Access from anywhere using web or mobile app
+
+Shell :
+. Choose between Bash(Azure CLI) or PowerShell
+
+Tools :
+.Included tools:
+	interpreters, modules, Azure tools
+.Language support for Node.js, .NET and python
+
+Storage:
+. Dedicated storage to persist data between sessions
+
+File Editor:
+. A complete file editor
+
+
+
+
+CLI Commands::::
+
+1 ) az group list
+	The az group list command lists the Azure resource groups in your subscription. Generally it will give you in json format. If you want to see in more proper way use (az group list --output table)
+
+2 ) az storage account list
+	The az storage account list subcommand lists all storage accounts in an Azure subscription or a specific resource group
+
+3 ) az vm list
+	The az vm list command lists the details of available virtual machines.
+
+4 ) az vm create 
+	 to create vm 
+az vm create `
+>> --name Lab `                     
+>> --resource-group 72-86df2c57-accessing-and-using-the-azure-cloud-sh `
+>> --image UbuntuLTS `
+>> --admin-username azureuser `
+>> --generate-ssh-keys
+
+
+
+Powershell Commands::::
+
+1 ) Get-AzResourceGroup
+2 ) Get-AzStorageAccount
+3 ) Get-AzVM
+4 ) Get-AzResource | ft	
+5 ) Remove-AzVM -Name aaa -ResourceGroupName 72-86df2c57-accessing-and-using-the-azure-cloud-sh
+6 ) Get-AzResourceGroup -Name 72-86df2c57-accessing-and-using-the-azure-cloud-sh
+
+Azure mobile app
+------------------>>
+
+- Respond to outages and emergencies from anywhere you have an internet connection. 
+- Interact with your Azure resources via Azure Resource Manager. 
+
+- Maintain insight on the go into the current status and health of your Azure environment. 
+
+- The main purpose of the Azure mobile app is to monitor the state of your Azure resources.
+- Alerts are instantly visible, and you can investigate all your resources as well.
+- All of your resources and subscriptions are visible on the mobile app.
+- You can even manage resources in the CloudShell too. The Azure mobile app uses the Azure Resource Manager to interact with your Azure resources, which means it is in sync with the Azure CLI,             Azure portal, or whatever else you use to interact with Azure.
+- The Azure mobile app provides a quick overview of your resources.
+
+
+
+
+ARM templates
+---------------->>
+
+The ARM templates are a way to describe which resource you want to create, delete, manage, alter, or do any number of actions to.
+One of the great advantages of computing in general is the ability to automate and replicate tasks, actions, and processes. ARM templates are that option for Azure.
+
+ARM templates are idempotent (Idempotent means that applying an operation once or applying it multiple times has the exact same effect.)
+
+ARM templates will written in JSON format
+
+Advantages::
+. Idempotent
+. Source control (keep track changes to ARM templates)
+. Reuse ( use combination of multiple partial ARM templates to achieve complex templates)
+. Declarative (you can specify what you want but not how you want... that is azure work)
+. No human errors (humans doesn't have a chance to repeat the errors)
+
+
+Azure Advisor
+---------------->>
+
+The Advisor will provide recommendation to improve availability of resources, save costs on services,,,....
+
+Azure Advisor is a free service from Microsoft Azure that provides recommendations for optimizing your Azure resources.
+
+ex- if you have 10 VMs. In that you are using 2 insufficiently.  so the azure advior will you suggestion like delete 2Vms or decrease the size of VMs

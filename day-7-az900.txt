@@ -1,0 +1,206 @@
+Virtual Machine
+---------------->>>
+
+* IaaS - Manage everything except the hardware. This includes the networking components.
+
+* Tools - Use azure portal to manage large numbers of VMs and even hybrid clouds.
+
+* Compliance - use azure blueprints to make your VMs comply with company guidelines.
+
+* Recommendations - Azure will recommend improvements to ensure better security, higher availability and greater performance.
+
+* Choice - Choose amount of RAM, no.of CPUs, Windowsor Linux.
+
+
+! You don't buy, own, or control the hardwar. Azure does.
+
+! VMs are an IaaS offering, where you control and manage everything on the machine.
+
+! Pricing for VMs go up as you increase RAM and number of CPUs. VMs are priced per hour.
+
+
+Scale sets
+----------->>>
+Scale set ia pool of identical VMs.(IaaS)
+
+Scale sets are identical VMs. They can be activated or deactivated as needed.
+
+* A baseline VM for the scale set ensures application stabilty.
+
+* a baseline VM is nothing but the first VM (we will clone that VM to create more identical VMs)
+
+* As a resource usage inceases, more VMs as activated to take the load.
+
+* You only pay for the VM, storage and networking resources youuse. Nothing additional for scale sets.
+
+
+- Multiple VMs -- Simple to manage multiple identical VMs
+
+- High availability -- If one VM fails or stops, the others in the sacle set will keep working.
+
+- Auto scaling -- based on your demand it will add or remove VMs
+
+- Large scale -- Run up to 1000 VMs in a single scale set
+
+- No extra cost -- No added cost for using scale sets
+
+
+App Services
+------------->>>
+
+App services is an easy way to host and manage your web application.
+
+App services are a PaaS offering on Azure
+
+	App Services is a fully managed platform. This means that servers, nerwork, storage and other fundamental infrastructure ia all handled or managed by Azure.
+
+You have to focus on Business value and logic
+
+
+App Services are three types
+
+1) Web Apps:::  (Web Apps are used to host web sites and web applications)
+
+	. run on both windows and linux
+	. supports a lot languages, such as .NET, Java, Node js, python ,.....
+	. Azure integration for easier deployment
+	. Auto-scaling and load balancing
+
+
+2) Web apps for containers:::   (Web Apps are used to host web sites and web applications)
+
+	. It is used to deploy and run containerized applications in azure
+
+
+3) API app:::   (API apps can host your data backend services and doesn't have a graphical front-end interface like other two app services)
+	API - Application Program Interface
+	. which is an efficient way to connect and expose any data backend that you have
+
+	. no graphical component means no user interface no frontend
+
+	. it is an interface to connect other applications to programmatically
+
+	. Azure API apps lets you host your API application easily. you can use many programming languages
+
+
+
+Container::::
+
+@ all the dependencies for an application are included in the container image
+
+@ Containers don't have any components relating to the OS that require maintenance
+
+@ Applications running in containers can be deployed easily to multiple different OS and hardware platforms.
+
+@ scaling and patching is much simpler
+
+
+```` You develop a software as normal. You go through the various cycles of creating your application. When you are ready to publish it, the application gets wrapped up in a container image, which can then be deployed or published to something like Azure Container Instances, also called ACI.
+
+Azure Container Instances
+-------------------------->>>
+
+
+Azure Container Instances is the primary service on Azure for hosting and running your workloads in a container.
+
+run the application inside of the container, without managing any virtual machines.
+
+
+
+Kubernetes
+----------->>>
+
+Kubernetes is an open-source container orchestration system for automating application deployment, scaling, and management
+
+
+
+'' open source == that means code base is public and anyone can submit fixes, and feature ideas to the product
+
+'' Orchestration == keeps track of lots of parts of a system. Makes sure containers are configured correctly to work together
+
+
+Azure kubernetes service
+------------------------>>>
+
+Azure Kubernetes Service (AKS) is a managed Kubernetes service from Microsoft Azure. It allows users to deploy and manage Kubernetes clusters on the Azure cloud platform. AKS helps developers deploy, manage, and scale containerized applications using Kubernetes.
+
+AKS is used to run multiple containers within a Kubernetes cluster, making it easier to manage and scale containerized applications.
+
+
+Azure Container Registry
+------------------------>>>
+
+Azure Container Registry (ACR) is a cloud-based service for managing and storing Docker container images and related artifacts
+
+when your azure container instances or kubernetes services need to create a new container, the image comes from ACR
+
+If you maintain container images in an Azure container registry, you can easily create a container in Azure Container Instances using the Azure portal.
+
+ex:::
+
+Imagine, for example, you have an application that processes orders from customers.
+
+That application runs inside a container, which is created from an image in ACR.
+
+Azure Kubernetes Services manages the containers and has a cluster.
+
+(A cluster is a set of machines, called nodes, that run containerized applications managed by Kubernetes.)
+
+A pod is a group of one or more containers with shared storage network and a specification for how to run the containers.
+
+Your application for processing orders lives in a pod. When the number of orders increase and the current pod or pods can't keep up, Kubernetes can automatically provision another pod to take some of the load.
+
+Azure Kubernetes Services is a must for managing any kind of container infrastructure on Azure.
+
+see image (AKS.png)
+
+
+Azure Virtual Desktop
+---------------------->>>
+
+Azure Virtual Desktop is a completely virtualized version of Windows, meaning it runs 100% in the cloud.
+
+
+- reuse windows licenses
+
+- multiple users can use the same VM instance to run multiple concurrent sessions
+
+- use windows from anywhere on any device with an internet browser
+
+- we can use azure storage to secure your data
+
+
+
+
+IaaS/PaaS (On a virtual machine.....)
+
+. install your own applications
+. Access to the OS
+. Resource visibility
+. An app service has no OS access, but has resource access
+
+Function....
+
+. Smallest compute service on azure
+. A single functon of compute
+. Called, or invoked, via a standard web address (URL)
+. Runs once and stops
+. It can communicate with other resources in azure
+. only once it will execute
+. A function just does one run and one unit of compute.
+
+
+
+= Function still use a VM to run on but, afterall compute has to be happen somewhere. No need to focus on any maintence and processes.
+
+
+So let's say your FunnyFerret business lets users upload pictures of their critters. These images need processing to both optimize them for web display and storage. When a user uploads an image of their funny ferret through to your website, an Azure function receives that image. The function has just one job to do, which is process the image to compress it and turn it into the correct file format. The function then places the image in a database for future use in your online application.Then the function dies.
+
+
+benifits:
+
+only once will run when needed otherwise no need of runing
+
+only when need of only it will so that money will save
+
+if any reason one time function fails, that doesn't affect with other time function run. only that particular function run only will get affect

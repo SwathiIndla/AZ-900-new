@@ -1,0 +1,9 @@
+Advantages of cloud???????
+
+. Fault tolerance  --- Fault tolerance is the ability of a system to continue operating without interruption when one or more of its components fail.
+	. Redundancy --- duplication or backing up of data stored in the cloud. 
+	. Resiliency --- the ability of a cloud system to recover from setbacks and continue operating normally.
+. High availability
+. Scalability --- the ability to increase or decrease IT resources as needed to meet changing demand
+. Elasticity --- the ability of a cloud to automatically expand or compress the infrastructural resources on a sudden up and down in the requirement so that the workload can be managed 		 efficiently
+

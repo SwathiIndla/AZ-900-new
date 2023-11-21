@@ -1,0 +1,185 @@
+. High availability means systems are always available - even automatically
+
+. Reliability describes how azure can tolerate failures or even disasters.
+
+. Scalability refers to scaling out or scaling up while automatically providing resources as needed.
+
+. Predictability is knowing your application will always perform as expected and knowing what it will cost.
+
+. Security is having full control of your cloud security posture.
+
+. Governance is standarding cloud deployments to meet requirements/company standards.
+
+. Manageability is management of cloud resources and how we interact with them.
+
+
+Capital Expenditure:
+
+Money spent by a business or organization on acquiring or maintaining fixed assets, such as land, buildings, and equipment
+
+
+Operational Expenditure:
+
+An ongoing cost for running a product, bussiness, or system on a day-to-day basis, including annual costs, electricity.
+
+ we need to pay 
+. per execution
+. per second
+. combination
+
+
+IaaS
+~~~~
+
+Infrastructure refers to actual servers being virtual ones. you don't have to go out and buy physical servers. You can scale up and down quickly, provisioning more servers as you need them, and only paying for what you use.
+
+
+Virtual machines
+networks physical buildings
+
+PaaS
+~~~~
+It is a super set of IaaS, and like IaaS, PaaS includes infrastructure, service, storage, and networking but also middleware, development tools, business intelligence (or BI), services, database management systems, and more. PaaS is designed to support the complete web application lifecycle: building, testing, deploying, managing, and updating. On Azure, the PaaS offering avoids the expense and complexity of buying and managing software licenses, the underlying application infrastructure, and middleware.
+
+Middleware
+tools
+
+
+SaaS
+~~~~
+It's a term that implicitly includes both IaaS and PaaS, and it is built on top of those. Normally, it has to do with providing a service via a managed rented software service, such as Stripe for credit card payments, Gmail for emails, or QuickBooks for accounting. You don't own the software, but you pay an access fee to use it or might even be free. That removes any maintenance you might have to do, and you always have the latest features. From Microsoft, in general, their most common SaaS offering is Office 365. The app services Azure SQL Server and Azure Active Directory
+
+office 365
+Azure active directory
+
+
+Serverless
+~~~~~~~~~~
+
+Of course, this never means there are no servers involved in the solution. It means that you don't have to manage any servers. You are effectively using someone else's servers to run on.Azure Functions are probably the best known examples of serverless on Azure. It was the first genuine example of serverless on Azure.
+
+
+
+
+---->
+Service is the core of azure.
+
+IaaS provides servers, storage and networking as a service.
+
+PaaS ia a superset of IaaS and also includes middleware, such as database management tools.
+
+SaaS is when a service is built on top of PaaS, like Office 365.
+
+Serverless means that you don't have any servers. Let's a single function be hosted, deployed, run and managed on its own.
+
+
+Azure Marketplace
+------------------>>
+
+Azure Marketplace is an online store that provides access to thousands of IT software applications and services.
+
+it provides))
+
+. Solutions and Services (Large selection from Microsoft and partners. Apps, VMs, templates, Services...)
+. Azure app store
+. Easy to integrate(use from portal, CLI, Powershell. Some are free, some are paid)
+. Publish your own (if you are a microsift partner, pulish your own services in markerplace.)
+
+Benefits::
+. Certified and less Maintenance (less maintenance than creating your own service or application from scratch. All Marketplace offerings are cerified by Microsoft)
+
+. Efficient (Faster to build a prototype of an idea ith ready-made components from the marketplace.)
+
+. New Markets (Market your own solution to new markets and segments. Having you assess application or other servers n the marketplace exposes it to a ton of Azure users.)
+
+. Support (if you have an application listed on the marketplace, you get technical support and design support, as well from Microsoft.)
+
+
+
+
+
+Azure regions::::::
+
+A region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network
+
+* Each region has more than one datacenter
+* Latency is the time it takes data to travel.
+  (latency defined perimeter - datacenters are not too far)
+
+* low latency - Low latency refers to the minimal delay in processing computer data over a network connection. 
+
+
+""" Two or more data centers not too far from each other connected with a fiber connection """
+
+
+
+Ho to choose a Region??????
+
+1) location - Choose a region closet to your users to minimize latency
+
+2) Features - Some features aren't in all regions. If you need a specific feature, some regions might be unavailable.
+
+3) Price - the price of services vary from region to region
+
+
+
+Paired Region!!!
+
+* Each region is paired within same geographic area.
+
+* If the primary region has an outage you can failover to the secondary region.
+
+* Only one region is updated at any one time.
+
+* Some services used paired regions for replication (both will get updated)
+
+
+Availability Zone ////
+
+Within a region and each zone has its own separate power, cooling and networking. Used for protecting data from failures.
+
+
+region(regions are connected 2)
+availability zones (max 3 avilability zones are there)
+data centers (in each availability zones 1 or more data centers will be there)
+
+
+
+Resource Group
+-------------->>>
+
+lets think that resource group is lika a container that holds resources
+
+* resource group is not a resource
+
+* each resource can only exist in a single resource group (simultanously we can put in another RG)
+
+* You can add or remove resources to any RG at any time.
+
+* You can move a resource from one RG to another
+
+* Resources from multiple regions can be in one resource group.
+
+* A RG can be used to manage access control for administrative actions. You can give access to an entire group, including the resources in it.
+
+* resources in one RG can interact with other resources in another RG
+
+* A RG has a location, or region, as it stores meta data about the resources in it.
+
+
+Azure Resource Manager (ARM)
+----------------------------->>>
+
+>>> All interaction with azure resources go through the ARM. It is the main Azure Architecture component for creating, updating and manipulating resources.
+
+. If you interact with any resource on Azure, it goes through the ARM. whether you use the portal, Powershell, Azure CLI.
+
+. Deploying resources from various tools will always result in the same consistent state
+
+. You can define the dependencies between resources, ensuring that any new resources don't step on the toes of the others.
+
+. you can easily decide which users have access to which resources using built-in features in the ARM.
+
+. You can logically organize all your resources using the tag feature. Tagging is assigning a label for each resource you can then sort and perform actions on
+
+. And you can clarify your organization's billing by viewing costs for a group of resources sharing the same tag.

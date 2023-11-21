@@ -1,0 +1,79 @@
+what is clold???????????
+
+cloud is just really a platform that you can have on-demand availability and delivery of virtual IT resources that you need for your personal use or your business use.
+
+cloud Types??????
+
+Private cloud : which is for organizations operating on a private network.
+
+Public cloud : This is owned by a provider like Amazon or Google or even Microsoft. And they provide a cloud computing infrastructure for individuals like ourselves or businesses.
+
+Hybrid cloud : this is just a combination of both private and public cloud offering.
+
+Why do we use cloud???????
+
+. speed the market
+. high availability of resources
+. unlimited storage
+. very easy to use
+. less money
+
+
+Private cloud providers...... RedHat, Dell, VMWare....
+Public cloud providers....... AWS, Azure, GCP
+
+
+Cloud Service Models::::
+PaaS
+----->
+
+Platform as a service
+
+PaaS is a service that offers a complete development and deployment environment in the cloud.
+
+SaaS
+----->
+
+Softwate as a service
+
+SaaS is a way of deliverong applications or software over the internet to the end user as a service.
+ex: ZOOM
+
+
+IaaS
+----->
+
+Infrastructure as a service
+
+A form of cloud computing that provides virtualized computing services over the internet.
+ex: aws, gcp, azure
+
+
+FaaS
+----->
+
+Function as a service
+
+FaaS ia a cloud computing service that allows you to execute code in response to events.
+FaaS is a serverless
+
+
+
+What is server??????????
+provide access to computing resources over the internet. 
+server is a computer or device that provides programmable service to another computer or its user.
+
+types of server???
+. web server ( Nginx, Apache)
+. file server (Windows file server, network attached storage)
+. database server (MySQL, PostgreSQL)
+. email server
+. DNS server
+. Application server
+
+What is serverless???
+Serverless is a cloud computing model that allows developers to build and run applications without managing servers. 
+
+serverless ia a cloud computing execution model in which the cloud provider allocates machine resorces on demand.
+
+serverless computing allows you to focus on writing code to perform specific tasks, while the cloud service provider handles the infrastructure, resource allocation, and event-driven execution of your functions.

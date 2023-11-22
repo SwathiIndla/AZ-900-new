@@ -1,0 +1,496 @@
+1)	Define cloud computing ??
+
+Cloud computing is the ability to access on-demand computing resources over the internet.
+
+EX- Data storage, Computing power, Applications, Servers, Development tools, Networking capabilities, Databases, Software, Analytics, Intelligence.
+
+2)	Describe the shared responsibility model ??
+
+The shared responsibility model is a cloud security framework that defines the security responsibilities of cloud service providers (CSPs) and customers.
+
+The model ensures that security responsibilities are distributed between the cloud provider and the customer, reducing overall security risk.
+
+3)	Define cloud models, including public, private, and hybrid ??
+Public cloud
+Data and information that can be shared with multiple people and organizations. Public clouds are delivered over the internet and hosted by external providers.
+Private cloud
+Data and information that is only accessible to users within an organization. Private clouds are typically on-premises, either in a company's local data centre or a separate physical infrastructure provided by a third party.
+Hybrid cloud
+A combination of public and private clouds. Hybrid clouds allow businesses to use public cloud services on private infrastructure.
+
+4)	Identify appropriate use cases for each cloud model ??
+
+Public Cloud Use Cases
+
+-	Web Hosting and Development
+-	Big Data Analytics
+-	Content Delivery and Distribution
+-	Backup and Disaster Recovery
+-	Development and Testing Environments
+
+Private Cloud Use Cases:
+
+-	Regulatory Compliance:
+-	Sensitive Data Handling:
+-	Legacy Applications:
+-	High-Performance Computing (HPC):
+
+Hybrid Cloud Use Cases:
+-	Data Backup and Recovery:
+Use Case: Using a combination of on-premises or private cloud storage and public cloud storage for data backup and recovery.
+
+-	Application Bursting:
+Use Case: Scaling applications during periods of increased demand by extending them to the public cloud.
+
+
+5)	Describe the consumption-based model ??
+
+Consumption-based pricing model provides customers with the flexibility to use cloud resources as needed, pay only for what they use, and adjust their consumption to optimize costs.
+
+6)	Compare cloud pricing models ??
+
+
+ 
+
+7)	Describe the benefits of high availability and scalability in the cloud ?? 
+High availability can provide a continuous user experience with no apparent downtime, even when things go wrong. 
+Ability of a system or service to remain operational and accessible with minimal downtime.
+
+Scalability refers to scaling out or scaling up while automatically providing resources as needed.
+
+
+8)	Describe the benefits of reliability and predictability in the cloud ??
+
+Reliability refers to the ability of a system or service to consistently perform as expected, with minimal downtime or service interruptions. It focuses on ensuring consistent and dependable performance.
+
+Reliability in cloud computing is the ability of cloud services and applications to function correctly and consistently, even in the face of failures or errors.
+
+Predictability is knowing your application will always perform as expected and knowing what it will cost.
+
+9)	Describe the benefits of security and governance in the cloud??
+Cloud security protects cloud-based services, applications, and data. It can help with Monitoring, Data protection, Security tools, and customer support. 
+
+Cloud governance is a set of policies and rules that guide how an organization uses cloud services and resources.
+10)	Describe the benefits of manageability in the cloud??
+
+Manageability in the cloud allows you to easily provision, configure, and monitor resources in an individual cloud service.
+
+Manageability is management of cloud resources and how we interact with them.
+11)	Describe infrastructure as a service (IaaS)??
+
+Infrastructure as a Service (IaaS) is one of the fundamental service models in cloud computing. It provides a comprehensive cloud-based infrastructure that includes virtualized computing resources, storage, and networking.
+
+12)	Describe platform as a service (PaaS)??
+
+Platform as a Service (PaaS) is a cloud computing service model that provides a platform and environment for developers to build, deploy, and manage applications without worrying about the underlying infrastructure and complexities.
+13)	Describe software as a service (SaaS)??
+
+Software as a Service (SaaS) is a cloud computing service model that delivers software applications over the internet on a subscription basis.
+
+ 
+14)	Identify appropriate use cases for each cloud service (IaaS, PaaS, and SaaS)??
+
+•	IaaS is appropriate when you want total control
+•	Reduced expenses, disaster recovery
+
+•	PaaS is appropriate when you want a development platform already built and you just want to add your code.
+•	Building software products
+
+•	SaaS is appropriate when you want ready to use application solution.
+•	SaaS provides software as a service to end-users.
+
+
+15)	Describe Azure regions, region pairs, and sovereign regions??
+
+An Azure region is a geographic area that contains multiple data centers that are connected through a dedicated low-latency network.
+Under each Azure region there will be availability zones.
+
+Azure region pairs are two Azure regions that are close enough to provide low-latency connectivity.
+
+Azure region pairs are: 
+•	Within the same geographic region
+•	Close enough to provide low-latency connectivity
+•	Prewired with high bandwidth connectivity between them
+
+Sovereign regions are Azure regions that are designed to meet the needs of customers who require compliance with specific regulations or data sovereignty requirements.
+
+Sovereign regions are dedicated to specific sovereign entities, such as: 
+Azure Government - US
+Azure China
+Azure Australia
+Azure Germany
+
+16)	Describe availability zones??
+Availability zones (AZs) are isolated data centers that are located within specific regions.
+AZs have independent power, cooling, and networking infrastructure. They are designed so that if one zone experiences an outage, the remaining zones can support regional services, capacity, and high availability.
+
+17)	Describe Azure datacenters??
+Azure data centers are physical buildings that contain thousands of servers, power, cooling, and networking infrastructure.
+
+18)	Describe Azure resources and resource groups??
+
+Azure resources are entities that you create within Azure. Examples of resources include: 
+Virtual machines, Network cards, Disks, Storage, SQL databases, Web apps, Virtual networks, Subscriptions, Management groups, Tags. 
+Resource groups are logical containers that hold these resources for an Azure tenant. Organizing resources into resource groups makes it possible to manage them more effectively. 
+All resources must be in a resource group, and a resource can only be a member of a single resource group. Resource groups can't be nested. If you delete a resource group, all resources contained within it are also deleted.
+19)	Describe subscriptions??
+
+An Azure subscription is a logical unit of Azure services that are linked to an Azure account. It serves as a single billing unit for Azure resources used in that account.
+
+20)	Describe management groups??
+
+Azure management groups are logical containers that allow you to organize Azure subscriptions and apply governance controls.
+
+You can create management groups to: 
+•	Group your subscriptions together
+•	Take actions in bulk
+•	Manage your resource hierarchy
+•	Protect your resource hierarchy
+
+21)	Describe the hierarchy of resource groups, subscriptions, and management groups??
+
+Management Groups contain one or more subscriptions. 
+Inside of Subscriptions are Resource Groups. 
+Resource Groups belong to exactly one Subscription. 
+Inside Resource group we will have resources.
+22)	Compare compute types, including container instances, virtual machines (VMs), and functions??
+Container instances are best for running single containerized applications with minimal setup and management. 
+VMs are better for running complex applications with specific software requirements. 
+Azure Functions are best for event-driven code and small functions.
+
+23)	Describe VM options, including Azure Virtual Machines, Azure Virtual Machine Scale Sets, availability sets, and Azure Virtual Desktop??
+
+•	A virtual machine (VM) is a digital version of a physical computer. 
+•	An Azure virtual machine gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs it. 
+
+•	Azure Virtual Machine Scale Sets (VMSS) is a service that allows you to create and manage a group of identical, auto-scaling Virtual Machines (VMs). 
+•	The number of VM instances can automatically increase or decrease based on conditions.
+
+
+•	An Availability Set is a logical grouping of two or more Azure VMs within the same data center. 
+•	These VMs are distributed across different physical racks, fault domains, and update domains.
+•	Fault Domains: Azure divides its data centers into separate fault domains. VMs within the same Availability Set are automatically distributed across different fault domains.  This ensures that if one fault domain experiences a hardware failure, it doesn't affect all the VMs in the set.
+•	Update Domains: Azure also divides its data centers into update domains. VMs within an Availability Set are distributed across different update domains, so that during planned maintenance events (like system updates), not all VMs are taken offline simultaneously.
+
+•	Azure Virtual Desktop (AVD) is a Microsoft Azure-based system that provides virtualized desktops and applications in the cloud.
+
+
+24)	Describe resources required for virtual machines??
+Virtual machines (VMs) require four primary resources to function: CPU, Memory, Network, Hard disk.
+25)	Describe application hosting options, including the Web Apps feature of Azure App Service, containers, and virtual machines??
+
+Azure Web Apps (Azure App Service):
+
+Azure Web Apps, part of Azure App Service, is a Platform as a Service (PaaS) offering designed for hosting web applications, APIs, and mobile backends. It is best suited for modern web applications and services that don't require direct control over the underlying infrastructure.
+
+
+
+Containers:
+Containers, such as Docker containers, provide a consistent environment for deploying applications and their dependencies. They are well-suited for microservices architectures, cloud-native applications, and scenarios where you need to ensure consistent environments across different platforms.
+
+Virtual Machines (VMs):
+Virtual machines are suitable for hosting a wide range of applications, including legacy systems, custom software, and more complex workloads. VMs offer full control over the virtualized infrastructure, allowing you to install and configure the operating system and software as needed.
+
+•	Azure Web Apps for hosting web applications and APIs.
+•	Containers for orchestrating and scaling micro-services in a cloud-native application.
+•	Virtual Machines for running specific workloads that require full control over the environment
+26)	Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, Azure VPN Gateway, and Azure ExpressRoute??
+
+•	Azure Virtual Network (VNet) is a service that allows Azure resources to communicate securely with each other, the internet, and on-premises networks.
+
+•	Subnets enable you to divide VNet into one or more subnetworks and allocate a portion of the VNet address space to each subnet. By doing thus we can have multiple networks on the same VNet
+
+•	Allows two separate networks to connect and communicate with each other. This connection enables data to flow between the networks, making resources, services, and applications in one network accessible to the other.
+
+•	Azure DNS is a managed Domain Name System (DNS) service provided by Microsoft Azure. DNS is a fundamental system that translates human-readable domain names (like www.example.com) into IP addresses that computers use to identify each other on the internet. Azure DNS simplifies the management of DNS records and domain names for your Azure resources and applications.
+
+•	A VPN gateway is a specific type of virtual network gateway that is used to send encrypted traffic between an Azure virtual network and an on-premises location over the public internet.
+
+•	If you need a private, secure, high-bandwidth, low-latency connection, directly from your data center or infrastructure to Azure, ExpressRoute is the service you want.
+
+27)	Define public and private endpoints??
+Public endpoints are accessible over the public internet. When a resource, such as a virtual machine or web app, has a public endpoint, it can be accessed from anywhere with an internet connection. Users can access the resource by its public IP address or domain name.
+Public endpoints are commonly used for web servers, public-facing websites, and services that need to be accessed from the internet.
+
+
+Private endpoints are accessible only within a private network, providing an extra layer of security. A private endpoint, is not accessible over the public internet. This allows the resource to be accessed securely within the VNet or through a Virtual Network Service Endpoint.
+Private endpoints are used when you want to restrict access to a resource and keep it within a private network. This is common for databases, storage accounts, and other sensitive resources that should not be exposed to the public internet.
+
+
+28)	Compare Azure storage services??
+Blob –  Binary Large Object
+•	These blobs of data are stored in containers, inside the storage account.
+•	That means there are three layers to Blob storage: storage account, container, and then blob.
+•	In Blobs we can store any type of data and in any size.
+•	The blobs or items will have a unique address. So we can able to get data easily.
+•	We can store any type of data such as images, audio files, video files, log files, backup and disaster recovery.
+Disk 
+•	Disk storage is a Disk
+•	Disk storage is referred to, is what you attach to your VMs.
+•	Azure will look after the physical disk for you and guarantees its uptime and backup. (Uptime refers to the amount of time that a computer system, server, application, or service is operational and available for use.)
+•	Azure guarantees Size and performance of the disks.
+•	Easy to upgrade your disk size and type.
+
+File
+On-Premises File storage Problems:
+-	You only have a limited amount of storage
+-	More time and resources need to spent on maintaining backups
+-	It is hard to keep all data secure at all times. Specialist assistance is needed.
+-	It is Difficult to share files across teams and organizations. 
+All the above problems will be solved by using File Storage Account in cloud
+
+•	By using cloud file storage we can share access to your on-premises infrastructure.
+•	You don’t have to worry about hardware or OS
+•	Network and power outages won’t affect your storage.
+29)	Describe storage tiers??
+
+Pricing Tiers::
+HOT					COOL			ARCHIVE
+Access time is less			More			More compare to hot and cool
+Storage cost is High			Low			Low
+Access cost is Low			High 			High
+Hot is used for data that is frequently accessed
+Cool is used for data that is infrequently accessed.
+Archive is used for data that you need to store for a very long time but expect to access very rarely.
+
+30)	Describe redundancy options??
+When it comes to storing critical data, you need to know that your data is protected against unexpected failures.
+
+•	It creates multiple replicated copies of your data.
+•	Copying data is completely automatic
+•	Minimum 3 copies will be created.
+•	This copying process is invisible to end user.
+•	Higher availability means higher cost.
+
+Locally redundant storage (LRS)
+Replicates your storage account three times within a single data center in the primary region. LRS is the lowest-cost redundancy option and offers the least durability.
+Geo-redundant storage (GRS)
+Copies data three times within the primary region and three times in a secondary region in single AZ.
+Zone-redundant storage (ZRS)
+It stores each copy of data in three availability zones in primary region.
+Geo-Zone redundant storage (GZRS)
+In primary region one copy on each AZ and in secondary region 3 copies in single AZ.
+
+31)	Describe storage account options and storage types??
+
+
+
+32)	Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync??
+AzCopy::
+•	AzCopy is a command-line utility for occasional data transfers.
+•	It is a downloaded application.
+•	It is able to transfer both blob and Azure Files storage types.
+•	It is especially useful for automated scripting routines
+Integrated in both Bash and PowerShell scripts for different automated routines
+
+Storage Explorer::
+•	Storage Explorer is a graphical user interface, or a GUI interaction method
+•	Using Storage explorer we can simply drag and drop different data types into and out of Azure Storage.
+•	We can move all types of storage accounts ( not only blob and files storage)
+
+Azure File Sync::
+•	This works specifically with Azure Files storage format in which it will automatically synchronize the Azure File Service with on-premises file servers.
+•	We can use this situations like you have on-premises locations with local file servers however you want to maintain the cloud availability
+•	We can synchronize files between multiple on-premises locations.
+
+33)	Describe migration options, including Azure Migrate and Azure Data Box??
+Azure Data Box::
+	This is used in the scenario of transfer lots (Too much to transfer over the internet) of data and/ or limited network bandwidth.
+•	Offline data transfer to/from Azure
+•	Order and receive the Data Box, prepare and copy data.
+•	Copy data to physical data storage device (Data box)
+•	Configure, seal, and schedule pickup, and Microsoft handles secure data transfer to Azure, after which you access and manage data in the cloud.
+•	To Azure : Data box data is transferred to storage account
+•	From Azure : Data box delivered to on-premises location for on-site transfer
+Azure Migrate::
+Azure Migrate is a tool provided by Microsoft to help organizations move their computer systems and data from their own data centers (on-premises) to Microsoft's cloud platform, Azure. Here's a simplified step-by-step process:
+
+1)	Prepare: Set up an Azure account and create a project for your migration.
+
+2)	Discover: Install a tool on your on-premises servers to collect information about them.
+
+
+3)	Assess: Based on the collected data, Azure Migrate helps you understand which servers can be moved to Azure, what kind of virtual machines you need in Azure, and how much it might cost.
+
+4)	Plan: Create a plan for how you'll move your servers. This includes deciding which servers to move first and setting up the necessary resources in Azure.
+
+5)	Migrate: Actually move your servers to Azure according to your plan. This might involve copying data and configurations from your own servers to Azure.
+
+34)	Describe directory services in Azure, including Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra and Azure Active Directory Domain Services (Azure AD DS)??
+
+Microsoft Azure Active Directory (Azure AD) is a cloud-based identity and access management solution. It acts as a centralized directory for managing user IDs, authentication, and authorization in the Azure cloud environment.
+
+
+
+35)	 Describe authentication methods in Azure, including single sign-on (SSO), multifactor authentication, and password less? 
+
+Single sign-on: If you want to use just one username and password to log in to multiple applications, you can use single sign-on in Azure.
+Multi-factor authentication: Multi-factor authentication (MFA) is a security method that requires users to provide two or more pieces of evidence to gain access to a resource. MFA is a core component of a strong identity and access management (IAM) policy. # something you are # something you have # something you know 
+Password less: Password less authentication is a method of verifying a user's identity without using a password. Instead, the user provides some other form of evidence such as fingerprint, face recognition, security token, one-time password (OTP), registered smartphone, retina scan etc. 
+
+36)	 Describe external identities and guest access in Azure? 
+External identities: working with outside consultant to streamline azure or azure AD configuration Create a separate organization account for external user --- > invite guest user to azure tenant --- > 
+guest user uses existing account as an external collaborator. B2B – business-to-business collaboration Guest Access: invite variety of account types (Identity Providers) Other external identity providers (google, Microsoft, Facebook) --- > assign permissions for guest account ( different permissions between azure AD and azure subscription)
+
+37)	Describe Azure AD Conditional Access?
+ Azure AD Conditional Access is access management feature in Microsoft Azure Active Directory (Azure AD) that allows organizations to set and enforce customized access policies and security controls for their users and applications. It enables organizations to make access decisions based on various conditions and factors, helping to enhance security and streamline user access in a dynamic and responsive manner.
+38)	Describe Azure role-based access control (RBAC)? 
+Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users within an organization. RBAC is also called role-based security. 
+
+39)	Describe the concept of Zero Trust? 
+All users assumed untrustworthy unless proven otherwise – Trusted by identity The Zero Trust security model automatically assumes everyone is untrustworthy unless proven otherwise. This is regardless on their location, whether they're inside or outside of a corporate network. Instead of trust based on a security perimeter, trust is instead proven by identity as opposed to location. And this trustworthiness is proven regardless of where our user is accessing from, whether it's from a trusted or an untrusted network.
+40)	Describe the purpose of the defense in depth model?
+ You need multiple layers of defense for your infrastructure. Azure has Physical, identity and access, perimeter, network, compute, gateway and firewalls, and data as layers. 
+41)	Describe the purpose of Microsoft Defender for Cloud? 
+It is formerly known as azure security centre Monitor security hygiene from VMs. Define policies to protect your resources better and respond to incidents.
+
+42)	 Describe factors that can affect costs in Azure ??
+
+The factors that affect costs in Azure include: 
+Resource size
+Resource location
+Bandwidth usage
+Type of service
+Capacity required
+Level of management
+CPU optimization level
+Unused resources
+
+43)	 Compare the Pricing calculator and the Total Cost of Ownership (TCO) calculator ??
+
+Both the Pricing calculator and the Total Cost of Ownership (TCO) calculator provide pricing for Azure services. The Pricing calculator estimates the cost of Azure products and services. The TCO calculator assesses the potential financial impact of deploying Azure. 
+
+The Pricing calculator: 
+
+Provides an estimate of the cost of Azure products and services
+Is for information purposes only
+You won't be charged for any services you select
+
+
+The TCO calculator: 
+
+Provides a comparison of costs between on-premises and Azure
+Includes a breakdown of costs for computing, storage, and networking resources
+Helps you estimate how much it would cost to move your resources from on-premises to Azure
+Covers not just the initial purchase price, but costs of operating that product across its lifespan
+
+44)	Describe the Azure Cost Management and Billing tool ??
+
+
+Azure Cost Management + Billing is a suite of tools from Microsoft that helps you analyze, manage, and optimize the cost of workloads running in the cloud. It's included with your Azure subscription at no additional cost. 
+
+Azure Cost Management + Billing lets you: 
+
+Analyze your usage and costs
+Predict future expenses
+View costs in a daily, monthly, or annual trend
+Identify trends and anomalies
+Find opportunities for optimization and savings
+Download your invoice, tax documents, usage, and charges
+
+45)	 Describe the purpose of tags ??
+
+ 
+In Microsoft Azure, tags are metadata that help you organize and label your resources. Tags are key-value pairs that describe a resource in your environment.
+Tags are useful for: 
+Organizing your resources
+Identifying resources based on settings that are relevant to your organization
+Grouping similar items within Azure storage
+Finding a specific item quickly
+Generating reports about resource usage and billing
+
+46)	Describe the purpose of Azure Blueprints  ??
+
+Azure Blueprints are templates that organizations can use to create, manage, and deploy resources and configurations across multiple subscriptions and environments.
+
+47)	  Describe the purpose of Azure Policy  ??
+
+
+Azure Policy is a free Azure service that helps you manage cloud resources by defining policies for them.
+Its primary purpose is to help ensure that resources deployed within an Azure environment meet regulatory, security, and organizational requirements.
+
+48)	 Describe the purpose of resource locks ??
+
+Resource locks in Microsoft Azure prevent accidental deletion or modification of essential resources. They can help prevent downtime or data loss. 
+Resource locks sit outside of the Role Based Access Controls (RBAC) hierarchy. When applied, they place the restriction on the resource for all users. 
+Resource locks prevent even owners from deleting resources. They would need to remove the lock first in order to remove a storage account.
+
+49)	  Describe the purpose of the Service Trust Portal ??
+
+The Microsoft Service Trust Portal (STP) is a public site that provides information, tools, and resources about Microsoft's security, privacy, and compliance practices. 
+
+The STP is a one-stop shop for: 
+
+Service updates
+Validation information
+Resources related to regulatory compliance issues
+Audit reports
+Other compliance-related information
+
+50)	Describe the Azure portal?
+
+Azure portal is like a one shop stop , we can access everything in azure through single sign-on and easy to use.
+51)	 Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell?
+AZURE CLOUDSHELL:
+Azure Cloud Shell provides a convenient way to use both Azure CLI and Azure PowerShell directly in your web browse
+AZURE CLI: This is a tool that lets you give simple commands to create, change, and check things on Azure.
+AZURE POWERSHELL: Azure PowerShell is a module for the Windows PowerShell and PowerShell Core environments that enables you to manage Azure resources using PowerShell scripting.
+52)	 Describe the purpose of Azure Arc?
+Azure Arc is a set of Azure services that extend Azure's management and governance capabilities to on-premises and multi-cloud environments.
+53)	 Describe Azure Resource Manager and Azure Resource Manager templates (ARM templates)?
+ARM:
+The deployment and management service provided by Microsoft Azure for organizing and managing Azure resources
+ARM Templates:
+ARM templates are the step-by-step guides you give to ARM to create and manage those resources automatically and consistently.
+54)	 Describe the purpose of Azure Advisor?
+Azure Advisor is a service provided by Microsoft Azure with the purpose of helping organizations optimize their Azure resources and improve the overall performance, security, and reliability of their cloud infrastructure
+55)	 Describe Azure Service Health?
+Azure Service Health is a service provided by Microsoft Azure that helps you stay informed about the status and health of Azure services and regions. Its main purpose is to keep you aware of any disruptions or issues that might affect your applications or workloads running in Azure
+56)	 Describe Azure Monitor, including Log Analytics, Azure Monitor alerts, and Application Insights
+AZURE MONITOR:
+That helps you find resources that are performing 100%
+Log Analytics:::
+Azure Monitor generates a lot of logs and telemetry data
+Log Analytics is a tool in the Azure portal that allows you to edit and run log queries from data collected by Azure Monitor logs.
+A large number of pre-built queries are provided. However, you can create your own custom queries as well. Regardless of your query method, these queries are in what is known as Kusto Query Language or KQL format.
+
+Application Insights:::
+•	It gives you performance insights for web applications.
+•	This works with only web based applications only
+•	Applications insights service is applicable for both azure and non-azure resources
+•	But we need to install an agent to get tied to that resource to application insight service
+Use scenario is like::
+` Find performance bottleneck in web application
+` Discover how users are using the website
+
+Application Insights for your web-based applications is able to answer valuable questions such as 
+how are our users using our web-based application?
+Where our different performance bottlenecks?
+And if our website is getting errors,
+why are we getting those errors?
+
+
+Azure Monitor Alerts:::
+If something in your Azure environment breaks, it sends out an alert, so someone can do something about it. More specifically, it sends out notifications in response to different unexpected events.
+Ex:
+1)	VM unresponsive
+2)	VM using excessive CPU
+3)	Application running very slow
+
+In monitoring alerts there main 2 components are there
+1-	Alert rule
+The alert rule is the trigger that is met before it sends out a notification.
+The components of an alert rule or the trigger -  Monitored resource, Monitored telemetry, Conditions to trigger alert, Assigned severity
+
+Rule example ::
+Monitored resource : VM
+Monitored telemetry : CPU utilization
+Condition : >90% CPU for % min
+Severity : 2- Warning
+
+2-	Action Group
+Action(s) taken when rule is triggered
+
+The components of an action group :: 
+•	Include notification targets which can be an email or SMS to human-based personnel.
+•	Maybe you have an SRE team that needs to be notified once an application is not performing as expected
